@@ -48,13 +48,12 @@
         <div class="timer">
             <b id="d"></b> Days <b id="h"></b> Hours <b id="m"></b> Minutes <b id="s"></b> Seconds
         </div>
-        <h2>但今天结束了。。。</h2>
     </div>
 
     <script>
         function timer() {
-            var start = new Date(2021, 3, 14); // 2015.7.2
-            var t = new Date(2023, 6, 28) - start;
+            var start = new Date(2024, 5, 20); // 2015.7.2
+            var t = new Date() - start;
             var h = ~~(t / 1000 / 60 / 60 % 24);
             if (h < 10) {
                 h = "0" + h;
